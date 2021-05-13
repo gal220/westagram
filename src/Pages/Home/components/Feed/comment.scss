@@ -1,0 +1,16 @@
+.commentSet {
+    img {
+        height: 12px;
+        width: 12px;
+    }
+    .author {
+        font-weight: bold;
+    }
+    .content {
+        margin-left: 5px;
+    }
+    display: flex;
+    justify-content: space-between;
+    margin-left: 16px;
+    margin-right: 16px;
+}

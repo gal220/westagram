@@ -1,0 +1,25 @@
+.profileWrap{
+    margin-top: 80px;
+    .contentCheckBox{
+        display: flex;
+        justify-content: center;
+        .contentCheck{
+            display: flex;
+            justify-content: center;
+            margin: 0px;
+            border-top: 1px solid #dbdbdb;
+            padding-bottom: 20px;
+            width: 935px;
+            font-weight: 600;
+            .contents{
+                margin-right: 60px;
+                padding-top: 20px;
+                cursor: pointer;
+            }
+            .tags{
+                padding-top: 20px;
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.backCircle{
+    border:gray solid 1px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.imgCircle{
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+
+.profileImgBig{
+    padding: 10px 15px;
+    .storyUserName{
+        font-weight: 600;
+        padding-top: 15px;
+        text-align: center;
+    }
+}

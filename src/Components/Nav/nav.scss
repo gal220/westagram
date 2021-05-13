@@ -1,0 +1,49 @@
+
+.navOutsideWrap{
+    background-color: white;
+    border-bottom: solid #dbdbdb 1px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    margin: 0 auto;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    .navWrap{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 54px;
+        width: 975px;
+        .navIconSet{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            flex:1;
+            img{
+                width: 22px;
+                margin-left: 22px;
+            }
+        }
+        .navImg{
+            display: flex;
+            flex:1;
+            img{
+                width: 103px;
+            }
+        }
+        .navInput{
+            display: flex;
+            justify-content: center;
+            flex:1;
+            input{
+                border: solid #dbdbdb 1px;
+                border-radius: 3px;
+                background-color: #fafafa;
+            }
+        }
+    }
+}
+
+

@@ -1,14 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import './index.scss'
 import reportWebVitals from './reportWebVitals';
+import Home from '../src/Pages/Home/home'
+import ProfileImgSmall from './Components/ProfileImgSmall/profileImgSmall';
+import Feed from './Pages/Home/components/Feed/feed';
+import ProfileInfo from './Pages/Profile/components/profileInfo';
+import StoryBox from './Pages/Home/storyBox/storyBox';
+import Profile from './Pages/Profile/profile'
+import Routes from './Routes';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <Routes></Routes>
+  ,document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
