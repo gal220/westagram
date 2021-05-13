@@ -42,7 +42,7 @@ function Feed(props) {
                         text={props.data.text}></FeedText>
                 </div>
                 <div className="commentInput">
-                    <CommentBox 
+                    <CommentBox
                         commentList={props.data.commentList}></CommentBox>
                 </div>
             </div>

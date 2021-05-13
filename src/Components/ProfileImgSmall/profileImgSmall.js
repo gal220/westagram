@@ -7,7 +7,7 @@ function ProfileImgSmall(props) {
     const history = useHistory();
 
     const goToProfile = () => {
-        history.push('/profile/' + props.userId)
+        history.push(`/profile/${props.userId}`)
     }
 
     return (
