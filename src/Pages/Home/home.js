@@ -35,9 +35,6 @@ function Home() {
                         )
                     }) : <Loading loadingContent="지금은 로딩 중입니다..."/>}
                 </div>
-                <div>
-                    회원님을 위한 추천
-                </div>
             </div>
         </div>
     )
