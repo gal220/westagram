@@ -26,13 +26,18 @@ function Home() {
     return (
         <div>
             <Nav></Nav>
-            <div className="feedWholeWrap">
-                {data.length > 0 ? 
-                data.map((feed)=>{
-                    return (
-                        <Feed data={feed}></Feed>
-                    )
-                }) : <Loading loadingContent="지금은 로딩 중입니다..."/>}
+            <div className="homeWrap">
+                <div className="feedWholeWrap">
+                    {data.length > 0 ? 
+                    data.map((feed)=>{
+                        return (
+                            <Feed data={feed}></Feed>
+                        )
+                    }) : <Loading loadingContent="지금은 로딩 중입니다..."/>}
+                </div>
+                <div>
+                    회원님을 위한 추천
+                </div>
             </div>
         </div>
     )
