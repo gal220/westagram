@@ -4,6 +4,7 @@ import Loading from '../../Components/loading'
 import { feedData } from './components/Feed/feedData'
 import './home.scss'
 import Nav from '../../Components/Nav/nav'
+import firestore from '../../firebase'
 
 function Home() {
 
@@ -23,6 +24,20 @@ function Home() {
         }
     },[]);
 
+    const getFeedData = () => {
+		firestore
+	      .collection('feed')  // restaurants 컬렉션의 정보를 가져오겠다.
+	      .get()
+	      .then(querySnapshot => {
+	        const arr = [];
+	        querySnapshot.forEach(doc => {
+	          arr.push(doc.data());
+	        });
+					console.log("데이터가 배열에 어떻게 들어오는지,", arr)
+	      });
+  };
+
+
     return (
         <div>
             <Nav></Nav>
@@ -36,6 +51,7 @@ function Home() {
                     }) : <Loading loadingContent="지금은 로딩 중입니다..."/>}
                 </div>
             </div>
+            <button onClick={getFeedData}>데이터 가져오기</button>
         </div>
     )
 }
